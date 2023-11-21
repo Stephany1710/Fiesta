@@ -9,15 +9,16 @@
             font-family: Pacifico, sans-serif;
             text-align: center;
             margin: 40px;
-            background-image: url('URL_DE_TU_IMAGEN_DE_GALAXIA');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
+            background-color: #cca9dd; /* Fondo de color lila */
             color: #fff; /* Color del texto */
+            border: 20px solid transparent; /* Ancho del borde */
+            border-image-source: url('URL_DE_TU_IMAGEN_DE_BORDE'); /* URL de la imagen para el borde */
+            border-image-slice: 20; /* Grosor del borde (píxeles) */
+            border-image-repeat: round; /* Repetir la imagen alrededor del borde */
         }
         h1 {
             color: #ff6347;
-             font-size: 3em;
+            font-size: 3em;
         }
         p {
             color: #fff;
@@ -56,15 +57,18 @@
 <body>
     <h1>¡Invitación de Cumpleaños!</h1>
     <p>¡Hola a todos!<br>¡Estás invitado a mi fiesta de cumpleaños!<br>Fecha: [Viernes 24 de Noviembre 2023] <br> Hora: [4:00 p.m] <br> Lugar: Miguel Lerdo de Tejeda 1203, Santa Barbara, 93980 Emilio Carranza, Ver.</p>
-    <img src="url_de_tu_imagen" alt="Imagen de la fiesta">
-    <p>¡No Faltes! <br> ¡Confirma tu asistencia!</p>
+
     <!-- Agrega el código del contador regresivo -->
     <a data-type="countdown" data-id="4623860" class="tickcounter" title="Faltan" href="//www.tickcounter.com/">Faltan</a>
     
-    <!-- Agrega el botón de confirmación con tu número de WhatsApp -->
-    <a class="confirm-button" href="https://api.whatsapp.com/send?phone=TUNUMERODETELEFONO&text=¡Hola! Confirmo mi asistencia a tu fiesta de cumpleaños.">Confirmar Asistencia</a>
-    
     <!-- Agrega el iframe del mapa -->
     <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3749.9352010720213!2d-96.61986342984513!3d19.96922718230404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTnCsDU4JzA5LjIiTiA5NsKwMzYnNTQuOSJX!5e0!3m2!1ses-419!2smx!4v1700544761631!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <!-- Agrega el botón de confirmación con tu número de WhatsApp -->
+    <a class="confirm-button" href="https://api.whatsapp.com/send?phone=TUNUMERODETELEFONO&text=¡Hola! Confirmo mi asistencia a tu fiesta de cumpleaños.">Confirmar Asistencia</a>
+
+    <img src="url_de_tu_imagen" alt="Imagen de la fiesta">
+    
+    <p>¡No Faltes! <br> ¡Confirma tu asistencia!</p>
 </body>
 </html>
